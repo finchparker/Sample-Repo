@@ -4,12 +4,12 @@ description: General integration methods and functionalities
 
 # dAPI Integration
 
-## Primary Functionality
+## 주요 기능
 
 개발자의 관점에서, 온톨로지 체인과의 상호작용을 원활하게 하는 기능들은 크게 아래와 같이 구분될 수 있을 것입니다 : 
 
 * _**로그인:**_  사용자들로 하여금 신원 인증을 가능케하고, 계정 혹은 신원과 관련된 정보를 쿼리할 수 있게 합니다. 
-* _**거래:**_  The transaction service for both `ONT` 와 `ONG` 그리고 다른 `OEP` 형태의 토큰이 사용된 거래 모두 스마트 컨트랙트를 배포하여 사용될 수 있습니다. 아래에서 `ONG` 기반의 거래의 예시를 볼 수 있습니다 
+* _**거래:**_   `ONT` 와 `ONG` 그리고 다른 `OEP` 형태의 토큰이 사용된 거래 모두 스마트 컨트랙트를 배포하여 사용될 수 있습니다. 아래에서 `ONG` 기반의 거래의 예시를 볼 수 있습니다.
 
 ```python
 OntCversion = '2.0.0'
@@ -54,9 +54,11 @@ def transferOng(from_base58, to_base58,  ong_amount):
 
 온톨로지는 개발자들이 직면할 여러가지 상황들과 시나리오를 고려하여 플랫폼을 `dApp`과 통합할 수 있는 다양한 방법들을 제공합니다.
 
-* `탈중앙화앱`을 지갑에서 실행하던 `Cyano` 지갑 크롬 플러그인을 사용하던 `dAPI`를 사용하는 여러가지 탈중앙화 방법들 모두는 체인과 상호작용을 할 수 있게 한다.
-* Integrating using one of the multiple `SDKs`,  a method which is also decentralized at its core. For example, games that use the `Unity 3D` engine and `C#`. would encounter the need to integrate through the respective `SDKs`.
-* Making the application open-platform using the ONT ID. Though, this method is not completely decentralized.
+* `탈중앙화앱`을 지갑에서 실행하던 `Cyano` 지갑 크롬 플러그인을 사용하던 `dAPI`를 사용하는 여러가지 탈중앙화 방법들 모두는 체인과 상호작용을 할 수 있게 합니다.
+
+* 다수의 `SDK들` 중 하나를 사용하여 통합하는 방식 역시, 코어단에서 바라보면 탈중앙화 되어있습니다. 예를 들어, `Unity 3D` 엔진이나 `C#` 을 이용한 게임을 예로 들자면 관련된 `SDK들`을 통하여 통합해야 할 것입니다. 
+
+* ONT ID를 사용하여 어플리케이션을 오픈 플랫폼으로 만들 수 있습니다. 하지만, 이 방법은 완벽하게 탈중앙화되어 있다고 할 수 없습니다. 
 
 위에서 언급된 방법중들 어떤 것들을 사용하더라도 로그인 기능과 스마트 컨트랙트 배포 기능에는 영향을 미치지 않습니다. 그러므로, 개발자는 본인이 원하는 방법을 선택하여 `dApps`와 통합하면 됩니다.
 
@@ -79,7 +81,7 @@ def transferOng(from_base58, to_base58,  ong_amount):
 * **탈중앙화 앱으로 크롬 지갑 플러그인 호출하기**
 * **모바일 지갑내에서 탈중앙화 앱 실행하기**
 * **지갑에서 탈중앙화 QR코드를 스캔하기**
-* **Application calls the mobile wallet**
+* **어플리케이션에서 모바일 지갑 호출**
 
 dAPI 프로토콜이 지원하는 지갑들은 아래와 같습니다 :
 
@@ -87,11 +89,11 @@ dAPI 프로토콜이 지원하는 지갑들은 아래와 같습니다 :
 * Banko
 * Huobi wallet
 
-The dApps that are currently using dAPI can be found by following the below link-
+dAPI를 현재 사용하는 탈중앙화 앱들은 아래의 링크에서 찾을 수 있습니다. 
 
 {% embed url="https://github.com/ontio-community/dapp-store" %}
 
-To ensure that the requirement for `dApps` to be accessible on both the browser and the mobile version, here we provide examples that involve using `dAPI` in three different scenarios. You can refer to:
+브라우저와 모바일에서 모두 `탈중앙화 앱`에 접근할 수 있게 하기 위해서, 온톨로지에서는 `dAPI`를 사용하는 3가지 예시 시나리오를 제시합니다. 
 
 * **모바일 버전** `dAPI` **적용 -** [_모바일 전용 dAPI_](https://github.com/ontio-cyano/cyano-bridge)\_\_
 * **크롬 플러그인 지갑** `dAPI` **적용 -** [_크롬 전용 dAPI_](https://github.com/ontio/ontology-dapi)\_\_
@@ -102,7 +104,7 @@ To ensure that the requirement for `dApps` to be accessible on both the browser 
 지갑을 통해 `탈중앙화 앱`을 launching 하는 가장 흔한 방법은 아래에 서술되어 있습니다. 과정과 더불어  몇가지 기본적인 기능들 역시 같이 서술되어 있습니다. 
 
 {% hint style="info" %}
-**H5 demo dApp source code:**  [https://github.com/ontio-cyano/mobile-dapp-demo](https://github.com/ontio-cyano/mobile-dapp-demo)
+**H5 데모 탈중앙화 앱 소스 코드:**  [https://github.com/ontio-cyano/mobile-dapp-demo](https://github.com/ontio-cyano/mobile-dapp-demo)
 
 **H5 탈중앙화 앱 데모버전 링크:** [http://101.132.193.149:5000/\#/](http://101.132.193.149:5000/#/)
 
@@ -119,9 +121,7 @@ To ensure that the requirement for `dApps` to be accessible on both the browser 
 
 ![](../../../../.gitbook/assets/dapp_integration_comb1.jpg)
 
-
-
-### 2. Fetch Account or Identity Information
+### 2. 계정 및 신원 정보 불러오기
 
 ![](../../../../.gitbook/assets/dapp_integration_demo1.jpg)
 
