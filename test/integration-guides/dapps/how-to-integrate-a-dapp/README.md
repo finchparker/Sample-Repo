@@ -1,5 +1,5 @@
 ---
-description: General integration methods and functionalities
+개요: dAPI 관련 사용법과 통합 방법을 가장 일반적이고 자주 쓰이는 예시와 함께 설명한 글입니다.
 ---
 
 # dAPI 사용법 (dAPI Integration)
@@ -147,9 +147,9 @@ def transferOng(from_base58, to_base58,  ong_amount):
 2. 사용자는 이를 확인 및 검증하고 지갑을 통해 해당 거래를 전송합니다. 
 3. 거래의 `해시` 값은 `dApp`에 돌아옵니다.
 
-`dAPI` 통합 방법을 사용한다면 2가지 장점이 있을 것압나다.
+`dAPI` 를 이용하여 통합을 한다면 2가지 장점이 있을 것압나다.
 
 * 사용자는 자산과 데이터의 보유 상태를 유지할 수 있습니다. 
-* The wallet login dApp can be readily integrated and conveniently used.
+* 지갑으로 탈중앙화 앱에 로그인 하는 부분은 추가로 구현할 필요가 없으며 동시에 이용하기도 쉬울 것입니다.
 
 **통합 프로토콜** 에 대한 더 많은 정보는 [아래](https://github.com/ontio-cyano/CEPs/blob/master/CEPS/CEP1.mediawiki)의 링크에서 볼 수 있습니다.
