@@ -125,7 +125,7 @@ def transferOng(from_base58, to_base58,  ong_amount):
 
 ![](../../../../.gitbook/assets/dapp_integration_demo1.jpg)
 
-신원 가져오기를 클릭하면 계정의 ONT ID를 바로 fetch 합니다. prompt 되면 비밀번호를 입력하십시오. 입력 후에는 아래의 빈칸에 ID가 나타날 것입니다. 서류 정보 등을 업로드하여 인증/KYC를 진행할 수 있습니다. 예를 들면, 여권 번호 혹은 그 첫번째 페이지 그림 등으로 가능합니다. 
+신원 가져오기를 클릭하면 계정의 ONT ID를 바로 불러옵니다. 작업이 완료되면 비밀번호를 입력하십시오. 입력 후에는 아래의 빈칸에 ID가 나타날 것입니다. 서류 정보 등을 업로드하여 인증/KYC를 진행할 수 있습니다. 예를 들면, 여권 번호 혹은 그 제일 앞 면 등으로 가능합니다. 
 
 ![](../../../../.gitbook/assets/dapp_integration_demo5.jpg)
 
